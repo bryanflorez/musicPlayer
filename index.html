@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music player</title>
+    <script src="<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@3002;900&display=swap" rel="stylesheet"></script>
+    <link rel="stylesheet" href="../style/style.css">
+    <!-- Font-awesome -->
+    <script src="https://kit.fontawesome.com/abaec19fdc.js" crossorigin="anonymous"></script>
+    <script src="../js/script.js" defer></script>
+</head>
+<body>
+    <!-- Main reproductor-->
+    <main class="reproductor">
+        <!-- Título -->
+        <section class ="titulo" >
+        <h1 id="titulo"></h1> 
+        </section>
+
+        <!-- Imagen -->
+        <section class="imagen-cover">
+            <img src="" alt="" id="cover">
+        </section>
+        <!-- Audio  -->
+        <audio src="" id="audio"></audio>
+        <!-- Barra de progreso-->
+        <div id = "progreso" class="barra-progreso">
+            <section id="barra" class="progreso"></section>
+        </div>
+
+        <!-- Controles -->
+        <section class="controles">
+            <button class="prev">
+                <i id="back" class="fas fa-backward"></i>
+            </button>
+            <button class="play">
+                <i id="play"class="fas fa-play-circle"></i>
+            </button>
+            <button class="next">
+                <i id="next" class="fas fa-forward"></i>
+            </button>
+        </section>
+
+        <!-- Listado de canciones -->
+        <section class="canciones" id="canciones">
+            <!-- <li><a class = "active" href=""> Canción 1</a></li>
+            <li><a href=""> Canción 2</a></li>
+            <li><a href=""> Canción 3</a></li> -->
+        </section>
+    </main>
+</body>
+</html>

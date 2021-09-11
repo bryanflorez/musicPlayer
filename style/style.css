@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    background: rgb(255,195,0);
+    background: linear-gradient(90deg, rgba(255,195,0,1) 25%, rgba(255,87,51,1) 64%, rgba(199,0,57,1) 92%);
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Reproductor */
+.reproductor{
+    max-width: 768px;
+    min-width: 320px;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 0,8px black;
+}
+/* Título */
+.titulo h1{
+    font-weight: bold;
+    margin-top: 0px;
+    text-align: center;
+    color: white;
+    size: 40px;
+}
+
+/* Imagen */
+.imagen-cover img{
+    width: 220px;
+    border-radius: 30px;
+    display: block;
+    margin: 0 auto 1rem auto;
+
+}
+
+/* Barra de progreso */
+.barra-progreso{
+    height: .2rem;
+    margin: 20px 20px;
+    background-color: rgba(255, 255, 255, 0.2);;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+}
+
+.progreso{
+    background-color: white;
+    width: 0%;
+    height: 100%;
+}
+
+/* Controles */
+.controles{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 30px;
+}
+
+.controles button{
+    background-color: transparent;
+    border: none;
+    color: white;
+    
+}
+
+.controles i{
+    font-size: 1.7rem;
+}
+
+/* Canciones */
+ .canciones{
+     list-style-type: none;
+ }
+
+ .canciones a{
+     color: lightgrey;
+     font-size: 18px;
+     margin-left: 20px;
+ }
+
+ .canciones a.active{
+     color: white;
+     font-weight: bold;
+ }
